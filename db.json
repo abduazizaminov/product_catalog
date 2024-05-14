@@ -1,0 +1,96 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "count": "2",
+      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
+      "geo": "Худжанд",
+      "is_favorite": true,
+      "name": "Lenovo Thinkpad",
+      "price": 8000,
+      "seller": "Abduaziz",
+      "type": "Техника",
+      "type_id": 1,
+      "img": "/noute.webp"
+    },
+    {
+      "id": "2",
+      "count": "2",
+      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
+      "geo": "Худжанд",
+      "is_favorite": false,
+      "name": "Lenovo Thinkpad",
+      "price": 8000,
+      "seller": "Abduaziz",
+      "type": "Техника",
+      "type_id": 1,
+      "img": "/noute.webp"
+    },
+    {
+      "id": "3",
+      "count": "1",
+      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
+      "geo": "Худжанд",
+      "is_favorite": false,
+      "name": "Диван",
+      "price": 10000,
+      "type": "Мебель",
+      "type_id": 2,
+      "seller": "Abduaziz",
+      "img": "/sofa.jpeg"
+    },
+    {
+      "id": "4",
+      "count": "1",
+      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
+      "geo": "Худжанд",
+      "is_favorite": true,
+      "name": "Диван",
+      "price": 10000,
+      "type": "Мебель",
+      "type_id": 2,
+      "seller": "Abduaziz",
+      "img": "/sofa.jpeg"
+    },
+    {
+      "id": "5",
+      "count": "10",
+      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
+      "geo": "Худжанд",
+      "is_favorite": true,
+      "name": "Пайпок",
+      "price": 10000,
+      "type": "Одежда",
+      "type_id": 3,
+      "seller": "Abduaziz",
+      "img": "/socks.jpeg"
+    },
+    {
+      "id": "6",
+      "count": "10",
+      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
+      "geo": "Худжанд",
+      "is_favorite": false,
+      "name": "Пайпок",
+      "price": 10000,
+      "type": "Одежда",
+      "type_id": 3,
+      "seller": "Abduaziz",
+      "img": "/socks.jpeg"
+    }
+  ],
+  "types" : [
+    {
+      "name": "Техника",
+      "id": 1
+    },
+    {
+      "name": "Мебель",
+      "id": 2
+    },
+    {
+      "name": "Одежда",
+      "id": 3
+    }
+  ]
+}
