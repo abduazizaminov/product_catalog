@@ -6,27 +6,29 @@
           Фильтры:
         </h4>
         <div class="lg:block flex">
-          <div>
+          <div >
+            <h5 for="">Город:</h5>
+            <div>
+              <label for="100">
+                <input checked value="100" v-model="selectedCity" class="mr-2" id="100" type="radio">
+                Все города
+              </label>
+              <label v-for="city in productStore.cities" :key="city.id" :for="city.name">
+                <input :value="city.id" v-model="selectedCity" class="mr-2" :id="city.name" type="radio">
+                {{ city.name }}
+              </label>
+            </div>
+          </div>
+          <div class="lg:mt-5 lg:ml-0 ml-5 mt-0">
             <h5 for="">Категория:</h5>
             <div>
               <label for="0">
                 <input checked value="0" v-model="selectedCategory" class="mr-2" id="0" type="radio">
                 Все категории
               </label>
-            </div>
-            <div>
-              <label v-for="productType in productStore.productTypes" :key="productType.id" :for="productType.name">
+              <label @click="getBrands()" v-for="productType in productStore.productTypes" :key="productType.id" :for="productType.name">
                 <input :value="productType.id" v-model="selectedCategory" class="mr-2" :id="productType.name" type="radio">
                 {{ productType.name }}
-              </label>
-            </div>
-          </div>
-          <div class="lg:mt-5 lg:ml-0 ml-5 mt-0">
-            <h5 for="">Город:</h5>
-            <div>
-              <label v-for="city in productStore.cities" :key="city.id" :for="city.name">
-                <input :value="city.id" v-model="selectedCity" class="mr-2" :id="city.name" type="radio">
-                {{ city.name }}
               </label>
             </div>
           </div>
@@ -45,10 +47,10 @@
               </div>
             </div>
           </div>
-          <button @click="sendFilterdata()" class="button bg-bgColor mr-[10px]">
-            Применить
-          </button>
         </div>
+        <button @click="sendFilterdata()" class="button bg-bgColor mr-[10px]">
+          Применить
+        </button>
       </div>
       <div v-if="productStore.products.length > 0" class="w-full lg:col-span-9 col-span-12">
         <product-card v-for="product in productStore.products" :key="product.id" :product="product"></product-card>
@@ -78,22 +80,25 @@ onMounted(() => {
   productStore.getCities()
 })
 
+const getBrands = ():void => {
+  
+}
+
 const sendFilterdata = (): void => {
   const filterParams = {
     type_id: selectedCategory.value,
     price_gte: fromPrice.value,
     price_lte: toPrice.value,
+    city_id: selectedCity.value
   }
   for (const key in filterParams) {
     if (!filterParams[key]) {
       delete filterParams[key]
     }
   }
-  if (filterParams.type_id == 0) {
-    delete filterParams.type_id
-  }
+  filterParams.city_id == 100 ? delete filterParams.city_id : null
+  filterParams.type_id == 0 ? delete filterParams.type_id : null
   productStore.getFilterData(filterParams)
-  
 }
 </script>
 <style>
