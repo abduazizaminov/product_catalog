@@ -14,6 +14,9 @@
           <div class="mb-[15px] text-sm">
             <span class="text-secondaryColor ">Продавец: <span class="text-main ">{{ props.product?.seller }}</span></span>
           </div>
+          <div class="mb-[15px] text-sm">
+            <span class="text-secondaryColor ">Бренд: <span class="text-main ">{{ props.product?.brand }}</span></span>
+          </div>
           <div class="product-type">
             <span class="text-secondaryColor">Категория товара: <span class="text-main"> {{ props.product?.type }}</span></span>
           </div>
@@ -35,7 +38,7 @@
         </div>
         <div class="flex w-full">
           <button @click="goToInfoPage()" class="button bg-bgColor mr-[10px]">
-            Просмотреть
+            Посмотреть
           </button>
           <button @click="basketStore.updateOrderStatus(props.product)" :class="`button ${props.product?.is_in_basket  ? 'bg-main' : 'bg-bgColor'} max-w-[50px] flex justify-center items-center`">
             <Basket :style="`${props.product?.is_in_basket  ? 'fill: #fff' : 'fill: #2D3B87'}`" class="w-[20px]"/>

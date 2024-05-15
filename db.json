@@ -2,85 +2,91 @@
   "products": [
     {
       "id": "1",
-      "count": "2",
-      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
+      "count": 1,
+      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
       "city": "Душанбе",
-      "city_id": 1,
       "is_in_basket": true,
-      "name": "Lenovo Thinkpad",
+      "name": "Samsung S24",
       "price": 8000,
       "seller": "Abduaziz",
       "type": "Техника",
       "type_id": 1,
-      "img": "/noute.webp"
+      "brand_id": 1,
+      "brand": "Samsung",
+      "img": "/samsung.jpeg"
     },
     {
       "id": "2",
-      "count": "2",
-      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
+      "count": 1,
+      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
       "city": "Худжанд",
-      "city_id": 2,
       "is_in_basket": false,
-      "name": "Lenovo Thinkpad",
-      "price": 8000,
+      "name": "IPhone 17 Pro Max Ultra",
+      "price": 7000,
       "seller": "Abduaziz",
       "type": "Техника",
       "type_id": 1,
-      "img": "/noute.webp"
+      "brand_id": 2,
+      "brand": "Apple",
+      "img": "/iphone.jpeg"
     },
     {
       "id": "3",
-      "count": "1",
-      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
+      "count": 1,
+      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
       "city": "Худжанд",
-      "city_id": 2,
       "is_in_basket": false,
       "name": "Диван",
-      "price": 10000,
+      "price": 999,
       "type": "Мебель",
       "type_id": 2,
+      "brand_id": 9,
+      "brand": "Furniture",
       "seller": "Abduaziz",
       "img": "/sofa.jpeg"
     },
     {
       "id": "4",
-      "count": "1",
-      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
+      "count": 1,
+      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
       "city": "Худжанд",
-      "city_id": 2,
       "is_in_basket": false,
       "name": "Диван",
       "price": 10000,
       "type": "Мебель",
       "type_id": 2,
+      "brand_id": 7,
+      "brand": "IKEA",
       "seller": "Abduaziz",
       "img": "/sofa.jpeg"
     },
     {
       "id": "5",
-      "count": "10",
-      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
+      "count": 1,
+      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
       "city": "Худжанд",
-      "city_id": 2,
       "is_in_basket": false,
       "name": "Пайпок",
       "price": 10,
       "type": "Одежда",
       "type_id": 3,
+      "brand_id": 6,
+      "brand": "Adidas",
       "seller": "Abduaziz",
       "img": "/socks.jpeg"
     },
     {
       "id": "6",
-      "count": "10",
-      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
+      "count": 1,
+      "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
       "city": "Худжанд",
-      "city_id": 2,
       "is_in_basket": false,
       "name": "Пайпок",
-      "price": 10,
+      "price": 5,
       "type": "Одежда",
       "type_id": 3,
+      "brand_id": 5,
+      "brand": "Abidas",
       "seller": "Abduaziz",
       "img": "/socks.jpeg"
     }
@@ -88,75 +94,61 @@
   "types": [
     {
       "name": "Техника",
-      "id": 1
+      "id": "1"
     },
     {
       "name": "Мебель",
-      "id": 2
+      "id": "2"
     },
     {
       "name": "Одежда",
-      "id": 3
-    }
-  ],
-  "cities": [
-    {
-      "name": "Душанбе",
-      "id": 1
-    },
-    {
-      "name": "Худжанд",
-      "id": 2
-    },
-    {
-      "name": "Бустон",
-      "id": 3
+      "id": "3"
     }
   ],
   "brands": [
     {
       "name": "Samsung",
-      "id": 1,
+      "id": "1",
       "type_id": 1
     },
     {
       "name": "Apple",
-      "id": 2,
+      "id": "2",
       "type_id": 1
     },
     {
       "name": "Redmi",
-      "id": 3,
+      "id": "3",
       "type_id": 1
     },
     {
       "name": "Adibas",
-      "id": 4,
+      "id": "4",
       "type_id": 3
     },
     {
       "name": "Abidas",
-      "id": 5,
+      "id": "5",
       "type_id": 3
     },
     {
       "name": "Adidas",
-      "id": 6,
+      "id": "6",
       "type_id": 3
     },
     {
       "name": "IKEA",
-      "id": 7,
+      "id": "7",
       "type_id": 2
     },
     {
       "name": "Kartell",
-      "id": 8,
+      "id": "8",
       "type_id": 2
     },
     {
       "name": "Furniture",
-      "id": 9,
+      "id": "9",
       "type_id": 2
     }
   ]

@@ -6,47 +6,51 @@
           Фильтры:
         </h4>
         <div class="lg:block flex">
-          <div >
-            <h5 for="">Город:</h5>
-            <div>
-              <label for="100">
-                <input checked value="100" v-model="selectedCity" class="mr-2" id="100" type="radio">
-                Все города
-              </label>
-              <label v-for="city in productStore.cities" :key="city.id" :for="city.name">
-                <input :value="city.id" v-model="selectedCity" class="mr-2" :id="city.name" type="radio">
-                {{ city.name }}
-              </label>
-            </div>
-          </div>
-          <div class="lg:mt-5 lg:ml-0 ml-5 mt-0">
-            <h5 for="">Категория:</h5>
-            <div>
-              <label for="0">
-                <input checked value="0" v-model="selectedCategory" class="mr-2" id="0" type="radio">
-                Все категории
-              </label>
-              <label @click="getBrands()" v-for="productType in productStore.productTypes" :key="productType.id" :for="productType.name">
-                <input :value="productType.id" v-model="selectedCategory" class="mr-2" :id="productType.name" type="radio">
-                {{ productType.name }}
-              </label>
-            </div>
-          </div>
-          <div class="lg:mt-5 lg:ml-0 ml-5 mt-0">
-            <h5>
-              Цена:
-            </h5>
-            <div class="flex">
-              <div class="mr-[10px]">
-                <label for="">От:</label>
-                <input v-model="fromPrice" class="priceInput" type="number">
-              </div>
-              <div>
-                <label for="">До:</label>
-                <input v-model="toPrice" class="priceInput" type="number">
-              </div>
-            </div>
-          </div>
+           <div>
+             <div class="mt-5">
+               <h5 for="">Категория:</h5>
+               <div>
+                 <label for="0">
+                   <input checked value="0" v-model="selectedCategory" class="mr-2" id="0" type="radio">
+                   Все категории
+                 </label>
+                 <label v-for="productType in productStore.productTypes" @click="getBrands(productType.id)" :key="productType.id" :for="productType.name">
+                   <input :value="productType.id" v-model="selectedCategory" class="mr-2" :id="productType.name" type="radio">
+                   {{ productType.name }}
+                 </label>
+               </div>
+             </div>
+           </div>
+           <div>
+             <div class="lg:mt-5 lg:ml-0 ml-5 mt-0">
+               <h5 for="">Бренды:</h5>
+               <div>
+                 <label for="200">
+                   <input checked value="200" v-model="selectedBrand" class="mr-2" id="200" type="radio">
+                   Все бренды
+                 </label>
+                 <label v-for="brand in productStore.brands" :key="brand.id" :for="brand.name">
+                   <input :value="brand.id" v-model="selectedBrand" class="mr-2" :id="brand.name" type="radio">
+                   {{ brand.name }}
+                 </label>
+               </div>
+             </div>
+             <div class="mt-5 lg:ml-0 ml-5">
+               <h5>
+                 Цена:
+               </h5>
+               <div class="flex">
+                 <div class="mr-[10px]">
+                   <label for="">От:</label>
+                   <input v-model="fromPrice" class="priceInput" type="number">
+                 </div>
+                 <div>
+                   <label for="">До:</label>
+                   <input v-model="toPrice" class="priceInput" type="number">
+                 </div>
+               </div>
+             </div>
+           </div>
         </div>
         <button @click="sendFilterdata()" class="button bg-bgColor mr-[10px]">
           Применить
@@ -70,33 +74,35 @@ import { ref, onMounted, onBeforeUnmount } from 'vue';
 const productStore = productModel()
 
 const selectedCategory = ref()
-const selectedCity = ref()
 const fromPrice = ref()
 const toPrice = ref()
+const selectedBrand = ref()
 
 onMounted(() => {
   productStore.getProducts()
   productStore.getProductTypes()
-  productStore.getCities()
+  productStore.getBrands()
 })
 
-const getBrands = ():void => {
-  
+const getBrands = (id: number): any => {
+  selectedBrand.value = null 
+
+  productStore.getBrands(id)
 }
 
 const sendFilterdata = (): void => {
   const filterParams = {
-    type_id: selectedCategory.value,
+    brand_id: selectedBrand.value,
     price_gte: fromPrice.value,
     price_lte: toPrice.value,
-    city_id: selectedCity.value
+    type_id: selectedCategory.value,
   }
   for (const key in filterParams) {
     if (!filterParams[key]) {
       delete filterParams[key]
     }
   }
-  filterParams.city_id == 100 ? delete filterParams.city_id : null
+  filterParams.brand_id == 200 ? delete filterParams.brand_id : null
   filterParams.type_id == 0 ? delete filterParams.type_id : null
   productStore.getFilterData(filterParams)
 }

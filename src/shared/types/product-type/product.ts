@@ -10,4 +10,6 @@ export type Product = {
   type: string
   type_id: number
   img: string
+  brand: string
+  brand_id: number
 }

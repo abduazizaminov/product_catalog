@@ -8,7 +8,7 @@ export const useProductStore = defineStore("product", () => {
     const products = ref([]) as Ref<Array<Product>>;
     const productInfo  = ref() as Ref<Product>
     const productTypes = ref([])
-    const cities = ref([])
+    const brands = ref([])
 
     async function getProducts() {
       try {
@@ -27,11 +27,10 @@ export const useProductStore = defineStore("product", () => {
         const response = await Axios.get(`/products`, {params: params});
 
         products.value = await response.data;
-        console.log(productInfo.value);
         if (params.price_lte && params.price_gte) {
           products.value = products.value.filter(product => {
             return product.price >= params.price_gte && product.price <= params.price_lte;
-          });          
+          });
         }
         consoleLog('Success [getProductInfo]', MessageLogType.Success);
       } catch (error: any) {
@@ -58,7 +57,6 @@ export const useProductStore = defineStore("product", () => {
         const response = await Axios.get(`/types`);
 
         productTypes.value = await response.data;
-        console.log(productInfo.value);
         
         consoleLog('Success [getProductInfo]', MessageLogType.Success);
       } catch (error: any) {
@@ -66,13 +64,16 @@ export const useProductStore = defineStore("product", () => {
       }
     }
 
-    async function getCities() {
+
+    async function getBrands(id: number) {
       try {
+        const params = {
+          type_id: id
+        }
+        const response = await Axios.get('/brands', {params: params});
 
-        const response = await Axios.get(`/cities`);
-
-        cities.value = await response.data;
-        console.log(productInfo.value);
+        brands.value = await response.data;
+        console.log(brands.value);
         
         consoleLog('Success [getProductInfo]', MessageLogType.Success);
       } catch (error: any) {
@@ -83,11 +84,11 @@ export const useProductStore = defineStore("product", () => {
       products,
       productInfo,
       productTypes,
-      cities,
+      brands,
       getProducts,
       getProductInfo,
       getProductTypes,
       getFilterData,
-      getCities
+      getBrands
     };
 });

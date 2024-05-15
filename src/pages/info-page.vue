@@ -29,8 +29,11 @@
               <span class="text-secondaryColor ">Продавец: <span class="text-main ">{{ productStore.productInfo?.seller
                   }}</span></span>
             </div>
+            <div class="mb-[15px] text-sm">
+            <span class="text-secondaryColor ">Бренд: <span class="text-main ">{{ productStore.productInfo?.brand }}</span></span>
+          </div>
             <div class="product-type">
-              <span class="text-secondaryColor">Категория товара: <span class="text-main"> Гречка</span></span>
+              <span class="text-secondaryColor">Категория товара: <span class="text-main"> {{ productStore.productInfo?.type }}</span></span>
             </div>
           </div>
         </div>

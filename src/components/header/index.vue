@@ -1,7 +1,10 @@
 <template>
   <header class="mb-[50px]">
     <div class="notch"></div>
-    <nav class="flex items-center mt-[15px] justify-end">
+    <nav class="flex items-center mt-[15px] justify-between">
+      <div class="text-2xl font-semibold text-main">
+        Shop
+      </div>
       <ul class="flex relative">
         <nav-link route="/" name="Каталог"></nav-link>
         <nav-link route="/basket" name="">
