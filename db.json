@@ -4,8 +4,9 @@
       "id": "1",
       "count": "2",
       "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
-      "geo": "Худжанд",
-      "is_favorite": true,
+      "city": "Худжанд",
+      "city_id": 2,
+      "is_in_basket": true,
       "name": "Lenovo Thinkpad",
       "price": 8000,
       "seller": "Abduaziz",
@@ -17,8 +18,9 @@
       "id": "2",
       "count": "2",
       "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
-      "geo": "Худжанд",
-      "is_favorite": false,
+      "city": "Худжанд",
+      "city_id": 2,
+      "is_in_basket": false,
       "name": "Lenovo Thinkpad",
       "price": 8000,
       "seller": "Abduaziz",
@@ -30,8 +32,9 @@
       "id": "3",
       "count": "1",
       "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
-      "geo": "Худжанд",
-      "is_favorite": false,
+      "city": "Худжанд",
+      "city_id": 2,
+      "is_in_basket": false,
       "name": "Диван",
       "price": 10000,
       "type": "Мебель",
@@ -43,8 +46,9 @@
       "id": "4",
       "count": "1",
       "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
-      "geo": "Худжанд",
-      "is_favorite": true,
+      "city": "Худжанд",
+      "city_id": 2,
+      "is_in_basket": false,
       "name": "Диван",
       "price": 10000,
       "type": "Мебель",
@@ -56,10 +60,11 @@
       "id": "5",
       "count": "10",
       "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
-      "geo": "Худжанд",
-      "is_favorite": true,
+      "city": "Худжанд",
+      "city_id": 2,
+      "is_in_basket": false,
       "name": "Пайпок",
-      "price": 10000,
+      "price": 10,
       "type": "Одежда",
       "type_id": 3,
       "seller": "Abduaziz",
@@ -69,17 +74,18 @@
       "id": "6",
       "count": "10",
       "description": " Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis quos quae distinctio, omnis deleniti aspernatur repudiandae consectetur fugit consequatur! Explicabo quo quaerat ipsam molestias in impedit dolorem vitae, aut odit.",
-      "geo": "Худжанд",
-      "is_favorite": false,
+      "city": "Худжанд",
+      "city_id": 2,
+      "is_in_basket": false,
       "name": "Пайпок",
-      "price": 10000,
+      "price": 10,
       "type": "Одежда",
       "type_id": 3,
       "seller": "Abduaziz",
       "img": "/socks.jpeg"
     }
   ],
-  "types" : [
+  "types": [
     {
       "name": "Техника",
       "id": 1
@@ -91,6 +97,67 @@
     {
       "name": "Одежда",
       "id": 3
+    }
+  ],
+  "cities": [
+    {
+      "name": "Душанбе",
+      "id": 1
+    },
+    {
+      "name": "Худжанд",
+      "id": 2
+    },
+    {
+      "name": "Бустон",
+      "id": 3
+    }
+  ],
+  "brands": [
+    {
+      "name": "Samsung",
+      "id": 1,
+      "type_id": 1
+    },
+    {
+      "name": "Apple",
+      "id": 2,
+      "type_id": 1
+    },
+    {
+      "name": "Redmi",
+      "id": 3,
+      "type_id": 1
+    },
+    {
+      "name": "Adibas",
+      "id": 4,
+      "type_id": 3
+    },
+    {
+      "name": "Abidas",
+      "id": 5,
+      "type_id": 3
+    },
+    {
+      "name": "Adidas",
+      "id": 6,
+      "type_id": 3
+    },
+    {
+      "name": "IKEA",
+      "id": 7,
+      "type_id": 2
+    },
+    {
+      "name": "Kartell",
+      "id": 8,
+      "type_id": 2
+    },
+    {
+      "name": "Furniture",
+      "id": 9,
+      "type_id": 2
     }
   ]
 }

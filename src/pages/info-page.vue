@@ -23,7 +23,7 @@
           <div class="mt-4">
             <div class="location">
               <Location class="mr-2" />
-              <span class="text-secondaryColor text-sm">{{ productStore.productInfo?.geo }}</span>
+              <span class="text-secondaryColor text-sm">{{ productStore.productInfo?.city }}</span>
             </div>
             <div class="mb-[15px] text-sm">
               <span class="text-secondaryColor ">Продавец: <span class="text-main ">{{ productStore.productInfo?.seller
@@ -36,8 +36,8 @@
         </div>
         <div class="flex w-full">
           <button @click="basketStore.updateOrderStatus(productStore.productInfo)"
-            :class="`button ${productStore.productInfo?.is_favorite ? 'bg-main' : 'bg-bgColor'} max-w-[50px] flex justify-center items-center`">
-            <Basket :style="`${productStore.productInfo?.is_favorite ? 'fill: #fff' : 'fill: #2D3B87'}`"
+            :class="`button ${productStore.productInfo?.is_in_basket ? 'bg-main' : 'bg-bgColor'} max-w-[50px] flex justify-center items-center`">
+            <Basket :style="`${productStore.productInfo?.is_in_basket ? 'fill: #fff' : 'fill: #2D3B87'}`"
               class="w-[20px]" />
           </button>
         </div>
