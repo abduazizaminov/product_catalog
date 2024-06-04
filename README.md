@@ -8,10 +8,6 @@ This is a Product Catalog application built with Vue 3, TypeScript, and Vite. Th
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Demo
 
