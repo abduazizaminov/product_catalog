@@ -1,33 +1,42 @@
-# product_catalog
+# Product Catalog
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a Product Catalog application built with Vue 3, TypeScript, and Vite. The application allows users to browse, search, and filter products.
 
-## Recommended IDE Setup
+## Table of Contents
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- [Demo](#demo)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Type Support for `.vue` Imports in TS
+## Demo
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+A live demo of the application can be found [here](http://m927036d.beget.tech/).
 
-## Customize configuration
+## Features
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- Product List
+- Filter products
+- Responsive design for mobile and desktop
 
-## Project Setup
+## Tech Stack
 
-```sh
-npm install
-```
+- **Vue 3:** The progressive JavaScript framework
+- **TypeScript:** Typed superset of JavaScript
+- **Vite:** Next generation frontend tooling
+- **Vue Router:** Official router for Vue.js
+- **Pinia:** State management library for Vue
+- **Axios:** Promise-based HTTP client
+- **TailwindCSS:** CSS framework
 
-### Compile and Hot-Reload for Development
+## Installation
 
-```sh
-npm run dev
-```
+1. **Clone the repository:**
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+```bash
+git clone https://github.com/abduazizaminov/product-catalog.git
+cd product-catalog
