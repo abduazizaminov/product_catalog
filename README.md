@@ -40,3 +40,12 @@ A live demo of the application can be found [here](http://m927036d.beget.tech/).
 ```bash
 git clone https://github.com/abduazizaminov/product-catalog.git
 cd product-catalog
+```
+Install dependencies:
+```bash
+npm install
+```
+Run the development server:
+```bash
+npm run dev
+```
